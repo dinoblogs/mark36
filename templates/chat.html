@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Narad AI Pro Unlimited[Free]</title>
+  <link rel="stylesheet" href="../static/home/chat.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="../static/home/chat2.js" defer></script>  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="static/icon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Chats container -->
+  <div class="chat-container">
+</div>
+
+
+<!-- Typing container -->
+<div class="typing-container">
+  
+  <div class="typing-content">
+    
+    <div class="typing-textarea">
+      <textarea id="chat-input" spellcheck="false" placeholder="Ask Anything..." required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+    <div class="typing-controls" id="cont">
+      <span id="mic" class="material-symbols-rounded" onclick="startRecognition()"></span>
+      <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+      <span id="delete-btn" class="material-symbols-rounded">delete</span>
+      <div id="stop" onclick="stop()"></div>
+    </div>
+  </div>
+
+  <div id="pop1" class="cd-popup" role="alert">
+    <div class="cd-popup-container">
+      <div style="padding-top: 17%;">
+        <span style="font-size: 1cm; font-weight: bolder;" id="now">Speak Now...</span>
+        <br>
+        <iframe style="border: none;" height="200px" src="/anim"></iframe>
+
+
+      </div>
+    </div> <!-- cd-popup-container -->
+  </div> <!-- cd-popup -->
+
+    <script src="../static/home/chat.js"></script>
+</body>
+
+</html>
