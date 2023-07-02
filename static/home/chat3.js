@@ -45,7 +45,7 @@ setInterval(sendGetRequest, 2000);
 
 
 function sendGetRequest2() {
-    $.get('/get_status', function(response) {
+    $.get('/get_status/', function(response) {
         document.getElementById('state').innerHTML = response
       }).fail(function(xhr, status, error) {
         console.log("Request failed with status:", status);
