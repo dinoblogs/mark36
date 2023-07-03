@@ -21,10 +21,10 @@ function run(cmd){
     $.post("/api",
 
 {
-    cmd: cmd,
+    cmd: cmd
 },
 function (data, status) {
-    return data;
+    console.log(data)
 
 
 })
