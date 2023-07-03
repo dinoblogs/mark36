@@ -438,6 +438,20 @@
 
 
     <script src="../static/home/chat3.js"></script>
+    <script>
+        function off(){
+    $.post("/api",
+
+{
+    cmd: 'shutdown',
+},
+function (data, status) {
+    console.log(data)
+
+
+})
+}
+    </script>
 
 </body>
 
