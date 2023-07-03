@@ -24,7 +24,10 @@ function sendGetRequest() {
             if (response != "") {
                 // alert(response)
                 if (response.includes('captured')){
-                    document.getElementById(file).innerHTML = '<img src="../static/img.png" style="height: 6cm;" alt="">'
+                    $.get('https://mark-6tly.onrender.com/static/txt/img.txt', function(data) {
+                        document.getElementById('file').innerHTML = `<img src="${data}" style="height: 6cm;" alt="">`
+                        });
+                    
                 }
                 document.getElementById('run').innerHTML = `${response}`
                 
