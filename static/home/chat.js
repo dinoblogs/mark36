@@ -17,18 +17,7 @@ function stop() {
 }
 
 
-function off(){
-    $.post("/api",
 
-{
-    cmd: 'shutdown',
-},
-function (data, status) {
-    console.log(data)
-
-
-})
-}
 
 
 function typeNextCharacter(text) {
