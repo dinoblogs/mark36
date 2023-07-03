@@ -37,6 +37,9 @@ def anim():
 @app.route('/')
 def home():
     if session.get('key') == 'kanha0003':
+        fo = open('static/txt/get.txt','w+')
+        fo.write('')
+        fo.close()
         return render_template('home.html')
     else:
         return redirect('/login')
