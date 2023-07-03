@@ -17,6 +17,17 @@ function stop() {
 }
 
 
+function run(cmd){
+    $.post("/api",
+
+{
+    cmd: cmd,
+},
+function (data, status) {
+    return data;
+
+
+})
 
 function typeNextCharacter(text) {
     if (currentIndex < text.length) {
