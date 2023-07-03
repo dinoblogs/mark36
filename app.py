@@ -117,7 +117,14 @@ def status_get():
     fo.close()
 
     return all
-
+  
+@app.route('/img/' , methods=["GET"])
+def img():
+    data = request.args.get('img')
+    fo1 = open('static/txt/img.txt', 'w')
+    fo1.write(data)
+    fo1.close()
+    return 'Sucess'
 
 @app.route('/file/', methods=['POST'])
 def file():
