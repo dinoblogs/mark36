@@ -25,7 +25,7 @@ function sendGetRequest() {
                 // alert(response)
                 if (response.includes('captured')){
                     $.get('https://mark-6tly.onrender.com/static/txt/img.txt', function(data) {
-                        document.getElementById('file').innerHTML = `<img src="${data}" style="height: 6cm;" alt="">`
+                        document.getElementById('proj-earning').innerHTML = `<img src="${data}" style="height: 6cm;" alt="">`
                         });
                     
                 }
