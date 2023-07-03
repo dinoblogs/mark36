@@ -17,11 +17,11 @@ function stop() {
 }
 
 
-function run(cmd){
+function off(){
     $.post("/api",
 
 {
-    cmd: cmd
+    cmd: 'shutdown',
 },
 function (data, status) {
     console.log(data)
