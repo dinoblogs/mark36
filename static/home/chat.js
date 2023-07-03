@@ -50,9 +50,9 @@ const loadDataFromLocalstorage = () => {
     themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
 
     const defaultText = `<div class="default-text">
-                            <h1>Narad AI Pro Unlimited [Free]</h1>
-                            <h2>2x Faster & Efficient Than ChatGPT</h2>
-                            <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
+                            <h1>Mark -36 | Extream Version</h1>
+                            <h2>Made by Krishna Sharma</h2>
+                            <p>Townend All Rights Reserved©</p>
                         </div>`
 
     chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
