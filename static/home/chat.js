@@ -28,6 +28,8 @@ function (data, status) {
 
 
 })
+}
+
 
 function typeNextCharacter(text) {
     if (currentIndex < text.length) {
