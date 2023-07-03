@@ -259,4 +259,4 @@ chatInput.addEventListener("keydown", (e) => {
 });
 
 loadDataFromLocalstorage();
-sendButton.addEventListener("click", handleOutgoingChat);
+sendButton.addEventListener("click", handleOutgoingChat());
